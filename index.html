@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PP Producciones - DJ, Sonido y Luces (Ultra PRO)</title>
+
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <meta name="description" content="PP Producciones - DJ profesional, sonido, iluminación y producción audiovisual. Servicios premium para eventos.">
+</head>
+<body>
+
+  <!-- PRELOADER -->
+  <div id="preloader" aria-hidden="true">
+    <div class="loader">
+      <svg viewBox="0 0 100 100" width="80" height="80" aria-hidden="true">
+        <circle cx="50" cy="50" r="40" stroke="none" fill="none"></circle>
+      </svg>
+      <div class="loader-text">PP Producciones</div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header-pro" id="header">
+    <div class="header-inner">
+      <a class="logo" href="#inicio" aria-label="Ir al inicio">
+        <img src="IMAGENES/PP PRODUCCIONES.png" alt="PP Producciones logo">
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#portafolio">Portafolio</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <button id="btn-burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="inicio" class="hero-ultra">
+    <div class="hero-bg" data-speed="0.4" style="background-image:url(IMAGENES/BANNER.png)"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <h1 class="reveal">DJ, Sonido y Luces — Experiencias Premium</h1>
+      <p class="reveal delay-1">Creamos ambientes inolvidables con audio profesional, iluminación creativa y producción audiovisual.</p>
+      <div class="hero-cta reveal delay-2">
+        <a class="btn-primary" id="cta-wa" href="https://wa.me/3133683243?text=Hola%20PP%20Producciones,%20quiero%20una%20cotización%20para%20mi%20evento." target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+        <a class="btn-ghost" href="#portafolio">Ver Portafolio</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Servicios</h2>
+      <div class="grid servicios-grid">
+        <article class="card reveal">
+          <div class="icon">🎧</div>
+          <h3>DJ Profesional</h3>
+          <p>Mezclas en vivo, animación musical y playlists personalizadas para cada evento.</p>
+        </article>
+        <article class="card reveal delay-1">
+          <div class="icon">🔊</div>
+          <h3>Sonido & Montaje</h3>
+          <p>Sistemas de audio de alta fidelidad, técnicos de escenario y pruebas de sonido.</p>
+        </article>
+        <article class="card reveal delay-2">
+          <div class="icon">💡</div>
+          <h3>Iluminación Creativa</h3>
+          <p>Luces robóticas, ambientación LED y diseño lumínico que transforma espacios.</p>
+        </article>
+        <article class="card reveal delay-3">
+          <div class="icon">🎥</div>
+          <h3>Producción Audiovisual</h3>
+          <p>Grabación, edición y entrega de contenido optimizado para redes y publicidad.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTAFOLIO -->
+  <section id="portafolio" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title reveal">Portafolio</h2>
+      <div class="carousel" id="carousel" aria-roledescription="carousel">
+        <button class="carousel-btn prev" aria-label="Anterior">&lt;</button>
+        <div class="carousel-track" id="carousel-track">
+          <div class="slide">
+  <a href="evento-en-vivo.html" target="_blank">
+    <img src="IMAGENES/SHOW 2.png" alt="Evento en vivo 1">
+  </a>
+  <div class="slide-caption">Evento en Vivo</div>
+</div>
+
+<div class="slide">
+  <a href="iluminacion-led.html" target="_blank">
+    <img src="IMAGENES/Iluminación LED.webp" alt="Iluminación LED">
+  </a>
+  <div class="slide-caption">Iluminación LED</div>
+</div>
+
+<div class="slide">
+  <a href="produccion-audiovisual.html" target="_blank">
+    <img src="IMAGENES/Producción Audiovisua.jpg" alt="Producción Audiovisual">
+  </a>
+  <div class="slide-caption">Producción Audiovisual</div>
+</div>
+
+<div class="slide">
+  <a href="dj-profesional.html" target="_blank">
+    <img src="IMAGENES/baner_.png" alt="DJ en Evento">
+  </a>
+  <div class="slide-caption">DJ Profesional</div>
+</div>
+        </div>
+        <button class="carousel-btn next" aria-label="Siguiente">&gt;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Contacto</h2>
+      <div class="contact-grid">
+        <form id="contact-form" class="contact-form reveal delay-1" onsubmit="openWhatsAppFromForm(event)">
+          <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+          <input type="tel" id="phone" name="phone" placeholder="Teléfono (opcional)">
+          <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+          <textarea id="message" name="message" rows="5" placeholder="Cuéntanos sobre tu evento" required></textarea>
+          <div class="form-actions">
+            <button class="btn-primary" type="submit">Enviar por WhatsApp</button>
+            <button class="btn-ghost" type="reset">Limpiar</button>
+          </div>
+        </form>
+        <div class="contact-info reveal delay-2">
+          <div class="info-card">
+            <h4>Contacto directo</h4>
+            <p>WhatsApp: <a href="https://wa.me/3133683243" target="_blank" rel="noopener">+57 313 368 3243</a></p>
+            <p>Email: <a href="mailto:pp.producciones01@gmail.com">pp.producciones01@gmail.com</a></p>
+            <p>Disponibilidad: Lunes a Domingo — Cotizaciones 24/7</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> PP Producciones</div>
+      <div>Diseñado por PEPE • Todos los derechos reservados</div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOTANTE -->
+  <a class="whatsapp-float" href="https://wa.me/3133683243" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">💬</a>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
