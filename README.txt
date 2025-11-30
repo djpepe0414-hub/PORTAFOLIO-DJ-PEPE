@@ -2,6 +2,7 @@ PP Producciones - Ultra PRO
 Archivos incluidos:
 - index.html
 - style.css
+- styles.css
 - script.js
 
 Instrucciones:
