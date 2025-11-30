@@ -3,32 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Producción Audio | Portafolio</title>
+  <title>Produccion Audio | Portafolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <section class="service-page">
-    <h1>Producción Audiovisual</h1>
-    <img src="IMAGENES/Producción Audiovisua.jpg" class="service-image" alt="Producción Audiovisual">
 
-    <p class="service-text">
-      Creamos contenido profesional para marcas, productos, eventos, artistas y campañas publicitarias.
-      Desde la idea, grabación, edición hasta la entrega final.
-    </p>
+  <!-- HEADER -->
+  <header class="header-pro">
+    <div class="header-inner container">
+      <div class="logo"><img src="IMAGENES/PP PRODUCCIONES.png" alt="Logo"></div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#portafolio">Portafolio</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <button id="btn-burger"><span class="burger-line"></span><span class="burger-line"></span><span class="burger-line"></span></button>
+    </div>
+  </header>
 
-    <h2>Servicios disponibles</h2>
-    <ul class="service-list">
-      <li>Grabación en 4K</li>
-      <li>Edición profesional</li>
-      <li>Videos corporativos</li>
-      <li>Reels y contenido para redes</li>
-      <li>Cámaras, luces y audio profesional</li>
-    </ul>
-
-    <a class="btn-whatsapp" href="https://wa.me/573133683243?text=Hola%2C%20quiero%20información%20sobre%20Producción%20Audiovisual" target="_blank">
-      Contáctanos por WhatsApp
-    </a>
+  <!-- HERO -->
+  <section class="hero-ultra" style="height:50vh;">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="reveal show">Evento en Vivo</h1>
+      <p class="reveal show delay-1">Producción completa de eventos en vivo con sonido profesional, iluminación LED y DJ especializado.</p>
+    </div>
   </section>
+
+  <!-- SECCIÓN PRINCIPAL -->
+  <section class="section section-dark">
+    <div class="container">
+     <img src="IMAGENES/Producción Audiovisua.jpg" class="service-image" alt="Producción Audiovisual">
+      <p class="service-text reveal show delay-2">
+        Ofrecemos todo lo necesario para que tu evento sea inolvidable: sonido de alta calidad, iluminación avanzada,
+        DJ profesional y coordinación técnica.
+      </p>
+      <h2 class="section-title reveal show delay-3">Servicios Incluidos</h2>
+      <ul class="service-list reveal show delay-3">
+        <li>Sonido profesional</li>
+        <li>Iluminación LED y robótica</li>
+        <li>DJ profesional</li>
+        <li>Operación técnica en vivo</li>
+      </ul>
+      <a class="btn-whatsapp reveal show delay-3" href="https://wa.me/573133683243?text=Hola%2C%20quiero%20información%20sobre%20Eventos%20en%20Vivo" target="_blank">Contáctanos por WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner container">
+      <p>&copy; 2025 Pepe Producciones. Todos los derechos reservados.</p>
+      <p>Diseñado con pasión y creatividad.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
