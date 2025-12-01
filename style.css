@@ -212,35 +212,3 @@ body.menu-open .nav ul{flex-direction:column;gap:12px}
 .carousel-btn.prev { left: 10px; }
 .carousel-btn.next { right: 10px; }
 
-/* -------------------------------- */
-/*        RESPONSIVE MOBILE         */
-/* -------------------------------- */
-
-@media (max-width: 768px) {
-  
-  .carousel {
-    max-width: 100%;
-  }
-
-  .carousel-track {
-    gap: 10px;
-  }
-
-  .slide {
-    min-width: 100%;
-  }
-
-  .slide img {
-    height: auto;
-    border-radius: 10px;
-  }
-
-  .slide-caption {
-    font-size: 0.9rem;
-  }
-
-  .carousel-btn {
-    font-size: 1.4rem;
-    padding: 4px 10px;
-  }
-
