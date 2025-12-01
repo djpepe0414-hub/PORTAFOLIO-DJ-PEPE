@@ -299,3 +299,42 @@ body.menu-open .nav ul{flex-direction:column;gap:12px}
 .btn-whatsapp:hover {
   background: #1eb457;
 }
+/* imágenes adaptables */
+img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+/* contenedor flexible */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+/* evitar barra horizontal */
+body, html {
+    overflow-x: hidden;
+}
+
+/* Responsive para celulares */
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 26px;
+    }
+
+    .portafolio-item,
+    .card,
+    .carousel img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .section {
+        padding: 60px 15px;
+    }
+}
