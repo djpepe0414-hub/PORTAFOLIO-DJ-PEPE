@@ -243,41 +243,4 @@ body.menu-open .nav ul{flex-direction:column;gap:12px}
     font-size: 1.4rem;
     padding: 4px 10px;
   }
-}
 
-img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    display: block;
-   html, body {
-    overflow-x: hidden;
-}
-   @media (max-width: 768px) {
-    .titulo {
-        font-size: 26px;
-    }
-
-    .portafolio-item,
-    .card,
-    .carousel img {
-        width: 100%;
-        height: auto;
-        max-width: 100%;
-    }
-
-    .section {
-        padding: 50px 15px;
-    }
-
-    .grid {
-        grid-template-columns: 1fr;
-    }
-}
-* {
-    -webkit-tap-highlight-color: transparent;
-}
-
-body {
-    -webkit-text-size-adjust: 100%;
-}
