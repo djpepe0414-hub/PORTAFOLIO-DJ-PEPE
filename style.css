@@ -245,83 +245,15 @@ body.menu-open .nav ul{flex-direction:column;gap:12px}
   }
 }
 
-/* CELULARES PEQUEÑOS */
-@media (max-width: 480px) {
-
-  .carousel-btn {
-    font-size: 1.2rem;
-    padding: 3px 8px;
-  }
-
-  .slide-caption {
-    font-size: 0.8rem;
-  }
-}
-.service-page {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 20px;
-  text-align: center;
-}
-
-.service-image {
-  width: 100%;
-  max-width: 700px;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.3);
-  margin-bottom: 20px;
-}
-
-.service-text {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 25px;
-}
-
-.service-list {
-  text-align: left;
-  max-width: 700px;
-  margin: 0 auto 30px;
-  font-size: 18px;
-}
-
-.btn-whatsapp {
-  display: inline-block;
-  background: #25D366;
-  color: #fff;
-  padding: 12px 25px;
-  border-radius: 8px;
-  font-size: 18px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.btn-whatsapp:hover {
-  background: #1eb457;
-}
-/* imágenes adaptables */
 img {
     width: 100%;
     height: auto;
     max-width: 100%;
-}
-
-/* contenedor flexible */
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 15px;
-    box-sizing: border-box;
-}
-
-/* evitar barra horizontal */
-body, html {
+    display: block;
+   html, body {
     overflow-x: hidden;
 }
-
-/* Responsive para celulares */
-@media (max-width: 768px) {
+   @media (max-width: 768px) {
     .titulo {
         font-size: 26px;
     }
@@ -330,11 +262,22 @@ body, html {
     .card,
     .carousel img {
         width: 100%;
-        max-width: 100%;
         height: auto;
+        max-width: 100%;
     }
 
     .section {
-        padding: 60px 15px;
+        padding: 50px 15px;
     }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    -webkit-text-size-adjust: 100%;
 }
